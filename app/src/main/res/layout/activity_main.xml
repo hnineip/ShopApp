@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <fragment
+       android:id="@+id/image_brand"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:name="com.hnineiphyu.shopapp.BrowseBrandFragment"
+       android:layout_marginTop="@dimen/dimen_10"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"/>
+
+   <fragment
+       android:id="@+id/latestFragment"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/dimen_4"
+       android:name="com.hnineiphyu.shopapp.LatestArrivalFragment"
+       app:layout_constraintTop_toBottomOf="@id/image_brand"
+       app:layout_constraintLeft_toLeftOf="@id/image_brand" />
+
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:name="com.hnineiphyu.shopapp.UploadFragment"
+        app:layout_constraintTop_toBottomOf="@id/latestFragment"
+        app:layout_constraintLeft_toLeftOf="@id/latestFragment" />
+
+    <fragment
+        android:id="@+id/countryFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:name="com.hnineiphyu.shopapp.CountryFragment"
+        app:layout_constraintTop_toBottomOf="@id/uploadFragment"
+        app:layout_constraintLeft_toLeftOf="@id/uploadFragment" />
+
+    <fragment
+        android:id="@+id/callFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:name="com.hnineiphyu.shopapp.CallFragment"
+        app:layout_constraintTop_toBottomOf="@id/countryFragment"
+        app:layout_constraintLeft_toLeftOf="@id/countryFragment" />
+
+    <fragment
+        android:id="@+id/popularFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:name="com.hnineiphyu.shopapp.PopularProductFragment"
+        app:layout_constraintTop_toBottomOf="@id/callFragment"
+        app:layout_constraintLeft_toLeftOf="@id/callFragment" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

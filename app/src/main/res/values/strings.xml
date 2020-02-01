@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShopApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="popular_product_fragment">Popular Products</string>
+    <string name="latest_arrival">Latest Arrivals</string>
+</resources>
